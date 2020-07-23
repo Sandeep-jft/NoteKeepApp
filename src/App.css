@@ -1,38 +1,207 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Heading {
+  display: flex;
+  align-items: center;
+  border-color: wheat;
+  -moz-box-shadow: inset 0 0 10px rgb(202, 145, 38);
+  -webkit-box-shadow: inset 0 0 10px rgb(202, 145, 38);
+  box-shadow: inset 0 0 10px rgb(202, 145, 38);
+  /* background-color: yellowgreen; */
+  /* justify-content: space-around; */
+}
+
+.Heading h1 {
+  color: red;
+  padding-left: 100px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px blue;
+  /* text-align: center; */
+}
+
+.Heading img {
+  /* border: 2px solid gold; */
+  padding: 5px 0px;
+}
+
+.createNote {
+  position: relative;
+  width: 420px;
+  height: 220px;
+  /* top: 69%; */
+  left: 50%;
+  margin-top: 8%;
+  transform: translate(-50%, -50%);
+  /* -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000; */
+  box-shadow: 0 0 10px rgb(202, 145, 38);
+  border-radius: 20px;
+  /* border: 1px solid red; */
+}
+
+.createNote form {
+  padding: 10px;
+}
+
+.createNote input[type="text"] {
+  padding-left: 5px;
+  /* display: block; */
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+}
+
+.createNote textarea {
+  padding-left: 5px;
+  width: 100%;
+  height: 120px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.createNote button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: red;
+  position: absolute;
+  bottom: -11px;
+  transform: translate(-30%, -5%);
+  background: rosybrown;
+  border: 2px solid pink;
+  outline: none;
+}
+
+.createNote button:hover {
+  color: green;
+  background: bisque;
+}
+
+.displayNote {
+  float: left;
+  /* margin-right: 20px; */
+  margin-left: 30px;
+  /* margin-right: 5px; */
+  width: 300px;
+  min-height: 180px;
+  padding: 7px;
+  box-shadow: 0 0 10px rgb(202, 145, 38);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: azure;
+}
+
+.displayNote h1 {
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+.displayNote p {
+  font-size: 20px;
+  min-height: 80px;
+}
+
+.displayNote button {
+  /* background: transparent; */
+  margin-right: 0px;
+  border: none;
+  margin-left: 250px;
+}
+
+.displayNote button .MuiSvgIcon-root:hover {
+  color: red;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 0 10px rgb(202, 145, 38);
+  border-radius: 20px;
+  /* color: white; */
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 1300px) {
+  .createNote {
+    margin-top: 12% !important;
+    width: 400px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1300px) {
+  .createNote {
+    margin-top: 15% !important;
+    width: 400px !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 900px) {
+  .createNote {
+    margin-top: 17% !important;
+    width: 380px !important;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .createNote {
+    margin-top: 19% !important;
+    width: 350px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .createNote {
+    margin-top: 19% !important;
+    width: 350px !important;
+  }
+  .Heading {
+    height: 150px !important;
+  }
+  .Heading img {
+    height: 130px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .createNote {
+    margin-top: 21% !important;
+    width: 320px !important;
+  }
+  .Heading {
+    height: 140px !important;
+  }
+  .Heading img {
+    height: 120px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .createNote {
+    margin-top: 30% !important;
+    width: 320px !important;
+    height: 200px !important;
+  }
+  .Heading {
+    height: 100px !important;
+  }
+  .Heading img {
+    height: 85px !important;
+  }
+  .heading h1 {
+    font-size: 1.5em !important;
   }
 }
